@@ -12,8 +12,7 @@ Aplikasi ini merupakan **RESTful API sederhana** untuk mengelola data pengguna (
 
 1. **Clone repository**
    ```bash
-   git clone https://github.com/username/user-api.git
-   cd user-api
+   git clone https://github.com/revip1/user-management
    ```
 
 2. **Install dependencies**
