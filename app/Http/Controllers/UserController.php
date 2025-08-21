@@ -23,7 +23,7 @@ class UserController extends Controller
             $validated = $request->validate([
             'name' => 'required|string',
             'email' => 'required|email|unique:users,email',
-            'no_telepon' => 'required|digits_between:8,15',
+            'no_telepon' => 'required|digits_between:10,15',
             'status_aktif' => 'required|boolean',
             'department' => 'nullable|string|max:255',
         ]);
@@ -41,7 +41,7 @@ class UserController extends Controller
             $validated = $request->validate([
                 'name' => 'string',
                 'email' => 'email|unique:users,email,' . $users->id,
-                'no_telepon' => 'digits_between:8,15',
+                'no_telepon' => 'digits_between:10,15',
                 'status_aktif' => 'boolean',
                 'department' => 'nullable|string|max:255',
             ]);
